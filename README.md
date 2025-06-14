@@ -28,16 +28,17 @@ Mini_commerce/
 ├── app.py
 ├── populate_db.py
 ├── data/
-│ └── products.db
+│   └── products.db
 ├── static/
-│ ├── css/
-│ │ └── style.css
-│ └── images/
+│   ├── css/
+│   │   └── style.css
+│   └── images/
 ├── templates/
-│ ├── base.html
-│ ├── home.html
-│ ├── login.html
-│ ├── register.html
-│ ├── cart.html
-│ └── checkout.html
-
+│   ├── base.html
+│   ├── home.html
+│   ├── login.html
+│   ├── register.html
+│   ├── cart.html
+│   └── checkout.html
+├── .gitignore
+└── README.md
