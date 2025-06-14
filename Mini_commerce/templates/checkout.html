@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>✅ Order Confirmed!</h2>
+<p>Thanks for shopping with us, {{ session['username'] or 'Guest' }}!</p>
+<a href="/">Shop Again</a>
+{% endblock %}

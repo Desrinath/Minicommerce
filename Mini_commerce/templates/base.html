@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini E-Commerce</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini E-Commerce</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/cart">Cart</a>
+            {% if session.get('username') %}
+                <span>Welcome, {{ session['username'] }}</span>
+                <a href="/logout">Logout</a>
+            {% else %}
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            {% endif %}
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/search" method="get">
+    <input type="text" name="q" placeholder="Search products...">
+    <button type="submit">Search</button>
+</form>
+<div class="product-list">
+    {% for product in products %}
+    <div class="product-card">
+        <img src="{{ url_for('static', filename='images/' + product.image) }}" width="150" height="150">
+        <h3>{{ product.name }}</h3>
+        <p>₹{{ product.price }}</p>
+        <a href="/add/{{ product.id }}">Add to Cart</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
