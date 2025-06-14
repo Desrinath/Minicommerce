@@ -24,3 +24,20 @@ This is a mini e-commerce web application built using Python's Flask framework, 
 
 ## Folder Structure
 
+Mini_commerce/
+├── app.py
+├── populate_db.py
+├── data/
+│ └── products.db
+├── static/
+│ ├── css/
+│ │ └── style.css
+│ └── images/
+├── templates/
+│ ├── base.html
+│ ├── home.html
+│ ├── login.html
+│ ├── register.html
+│ ├── cart.html
+│ └── checkout.html
+
